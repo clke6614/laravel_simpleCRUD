@@ -6,6 +6,7 @@
 			{{ method_field('DELETE') }}
 			<input type="submit" value="Delete">
 		</form>	
+		<a href="insertone/{{ $todo->id }}">Updata</a>
 	</p>
 @endforeach
 

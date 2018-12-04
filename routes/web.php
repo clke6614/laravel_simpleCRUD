@@ -16,4 +16,6 @@ Route::get('/', function () {
 });
 Route::get('/todo','TodoController@index');
 Route::post('/todo','TodoController@insert');
+Route::get('/insertone/{todo}','TodoController@insertone');
+Route::patch('/update/{todo}','TodoController@update');
 Route::delete('/todo/{todo}','TodoController@destroy'); 
